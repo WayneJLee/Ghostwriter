@@ -1684,6 +1684,7 @@ Try opening it, exporting as desired type, and re-uploading it."
         context["company"] = self.company_config.company_name
         context["company_pocs"] = self.report_json["team"].values()
         context["project_codename"] = self.report_json["project"]["codename"]
+        context["project_note"] = self.report_json["project"]["note"]
 
         # Project dates
         context["project_start_date"] = self.report_json["project"]["start_date"]
@@ -2320,6 +2321,7 @@ class TemplateLinter:
                     context["project_start_date_uk"] = ""
                     context["project_end_date"] = ""
                     context["project_end_date_uk"] = ""
+                    context["project_note"] = ""
 
                     context["execution_window"] = ""
                     context["execution_window_uk"] = ""

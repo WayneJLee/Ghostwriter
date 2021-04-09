@@ -29,9 +29,9 @@ class Migration(migrations.Migration):
             name='CompanyInformation',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('company_name', models.CharField(default='SpecterOps', help_text='Company name handle to reference in reports', max_length=255)),
-                ('company_twitter', models.CharField(default='@specterops', help_text='Twitter handle to reference in reports', max_length=255, verbose_name='Twitter Handle')),
-                ('company_email', models.CharField(default='info@specterops.io', help_text='Email address to reference in reports', max_length=255)),
+                ('company_name', models.CharField(default='Vigilant Asia', help_text='Company name handle to reference in reports', max_length=255)),
+                ('company_twitter', models.CharField(default='@VigilantAsia', help_text='Twitter handle to reference in reports', max_length=255, verbose_name='Twitter Handle')),
+                ('company_email', models.CharField(default='info@vigilantasia.com.my', help_text='Email address to reference in reports', max_length=255)),
             ],
             options={
                 'verbose_name': 'Company Information',
