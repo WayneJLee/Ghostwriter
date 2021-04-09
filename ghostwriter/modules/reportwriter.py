@@ -1746,6 +1746,10 @@ Try opening it, exporting as desired type, and re-uploading it."
             self.process_text_xml(section, finding)
             return self.sacrificial_doc
 
+
+        # Project Note
+        context["project_note_rt"] = render_subdocument(context["project_note"], finding=None)
+
         # Findings
         for finding in context["findings"]:
             logger.info("Processing %s", finding["title"])
